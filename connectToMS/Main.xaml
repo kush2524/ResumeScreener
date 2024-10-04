@@ -1,0 +1,1010 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:snm="clr-namespace:System.Net.Mail;assembly=System.Net.Mail" xmlns:str="clr-namespace:System.Text.RegularExpressions;assembly=System.Text.RegularExpressions" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Globalization</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.Outlook.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.PDF.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="722,458.04" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="EmailScreening" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_60">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="scg:List(snm:MailMessage)" Name="EmailMessages" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:GetOutlookMailMessages Account="{x:Null}" FilterByMessageIds="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Get Outlook Mail Messages" Filter="[Subject]='STGi | New Hire(s)' AND [attachment]='true'" GetAttachements="False" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="GetOutlookMailMessages_1" MailFolder="Inbox" MarkAsRead="False" Messages="[EmailMessages]" OnlyUnreadMessages="False" OrderByDate="NewestFirst" Top="30" />
+      <ui:ForEach x:TypeArguments="snm:MailMessage" CurrentIndex="{x:Null}" DisplayName="For Each currentMailMessage" sap:VirtualizedContainerService.HintSize="450,545" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[EmailMessages]">
+        <ui:ForEach.Body>
+          <ActivityAction x:TypeArguments="snm:MailMessage">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="snm:MailMessage" Name="currentMailMessage" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,407" sap2010:WorkflowViewState.IdRef="Sequence_45">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="382,118" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[currentMailMessage.Subject.ToString]" />
+              <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="382,118" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[currentMailMessage.Body.Tostring]" />
+              <ui:SaveMailAttachments Attachments="{x:Null}" DisplayName="Save Attachments" ExcludeInlineAttachments="False" Filter=".pdf" FolderPath="attachments" sap:VirtualizedContainerService.HintSize="382,111" sap2010:WorkflowViewState.IdRef="SaveMailAttachments_1" Message="[currentMailMessage]" OverwriteExisting="False" />
+            </Sequence>
+          </ActivityAction>
+        </ui:ForEach.Body>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:ForEach>
+    </Sequence>
+    <Sequence sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_61">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Sequence sap:VirtualizedContainerService.HintSize="672,1930" sap2010:WorkflowViewState.IdRef="Sequence_53">
+        <Sequence.Variables>
+          <Variable x:TypeArguments="sd:DataTable" Name="dtData" />
+          <Variable x:TypeArguments="sd:DataTable" Name="dtOutput" />
+        </Sequence.Variables>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:BuildDataTable DataTable="[dtData]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="638,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_4" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Field&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Regex&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Value&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Field&gt;Applicant’s Legal Name:&lt;/Field&gt;&#xD;&#xA;    &lt;Regex&gt;(?&amp;lt;=Contact Information-\s*\n\s*)[A-Za-z]+\s[A-Za-z]+&lt;/Regex&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Field&gt;Email Address&lt;/Field&gt;&#xD;&#xA;    &lt;Regex&gt;(.*)(?=\nEmail\sAddress:)&lt;/Regex&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Field&gt;Phone Number&lt;/Field&gt;&#xD;&#xA;    &lt;Regex&gt;\(?\d{3}\)?[\s-]?\d{3}[\s-]?\d{4}&lt;/Regex&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Field&gt;Start Date&lt;/Field&gt;&#xD;&#xA;    &lt;Regex&gt;(\d{4}-\d{2}-\d{2})&lt;/Regex&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Field&gt;Location&lt;/Field&gt;&#xD;&#xA;    &lt;Regex&gt;(.*)(?=\nLocation:)&lt;/Regex&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Field&gt;Reporting Manager&lt;/Field&gt;&#xD;&#xA;    &lt;Regex&gt;(.*)(?=\nReports\sTo:)&lt;/Regex&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Field&gt;Department&lt;/Field&gt;&#xD;&#xA;    &lt;Regex&gt;(.*)(?=\nDepartment:)&lt;/Regex&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Field&gt;Job Title&lt;/Field&gt;&#xD;&#xA;    &lt;Regex&gt;(.*)(?=\nJob\sTitle:)&lt;/Regex&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+        <ui:BuildDataTable DataTable="[dtOutput]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="638,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_5" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Applicant_x0027_s_x0020_Legal_x0020_Name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Email_x0020_Address&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Phone_x0020_Number&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Start_x0020_Date&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Location&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Reporting_x0020_Manager&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Department&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Job_x0020_Title&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+        <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each currentText" sap:VirtualizedContainerService.HintSize="638,1524" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[Directory.GetFiles(&quot;C:\Users\Kushagra\Documents\UiPath\connectToMS\attachments&quot;)]">
+          <ui:ForEach.Body>
+            <ActivityAction x:TypeArguments="x:String">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:String" Name="currentText" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="604,1377" sap2010:WorkflowViewState.IdRef="Sequence_54">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="x:String" Name="ProcessedPath" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <Sequence DisplayName="ReadPDF" sap:VirtualizedContainerService.HintSize="570,1317" sap2010:WorkflowViewState.IdRef="Sequence_55">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="x:String" Name="strPDF" />
+                    <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="ienMatch" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:ReadPDFText PreserveFormatting="{x:Null}" DisplayName="Read PDF Text" FileName="[currentText]" sap:VirtualizedContainerService.HintSize="536,115" sap2010:WorkflowViewState.IdRef="ReadPDFText_2" Range="All" Text="[strPDF]">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:ReadPDFText>
+                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="536,714" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+                    <ui:ForEachRow.Body>
+                      <ActivityAction x:TypeArguments="sd:DataRow">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="502,516" sap2010:WorkflowViewState.IdRef="Sequence_57">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Sequence sap:VirtualizedContainerService.HintSize="468,456" sap2010:WorkflowViewState.IdRef="Sequence_56">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="ienMatch" />
+                            </Sequence.Variables>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:Matches FirstMatch="{x:Null}" DisplayName="Find Matching Patterns" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="Matches_2" Input="[strPDF]" IsBuilderTabModified="False" Pattern="[CurrentRow.item(&quot;Regex&quot;).ToString]" RegexOption="IgnoreCase, Compiled" Result="[ienMatch]" />
+                            <Assign sap:VirtualizedContainerService.HintSize="434,115" sap2010:WorkflowViewState.IdRef="Assign_15">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Object">[CurrentRow.Item("Value")]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Object">[ienMatch(0).Value]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,166" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[String.Join(&quot;,&quot;, CurrentRow.ItemArray)]" />
+                          </Sequence>
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:ForEachRow.Body>
+                  </ui:ForEachRow>
+                  <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="C:\Users\Kushagra\Documents\UiPath\connectToMS\ProcessedPDFS" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="536,193" sap2010:WorkflowViewState.IdRef="MoveFile_2" Overwrite="True" Path="[currentText.ToString]" />
+                  <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{dtData.rows(0).Item(&quot;Value&quot;).ToString, dtData.rows(1).Item(&quot;Value&quot;).ToString,  dtData.rows(2).Item(&quot;Value&quot;).ToString,  dtData.rows(3).Item(&quot;Value&quot;).ToString,  dtData.rows(4).Item(&quot;Value&quot;).ToString,  dtData.rows(5).Item(&quot;Value&quot;).ToString,  dtData.rows(6).Item(&quot;Value&quot;).ToString, dtData.rows(7).Item(&quot;Value&quot;).ToString }]" DataTable="[dtOutput]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="536,212" sap2010:WorkflowViewState.IdRef="AddDataRow_3" />
+                </Sequence>
+              </Sequence>
+            </ActivityAction>
+          </ui:ForEach.Body>
+        </ui:ForEach>
+        <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[dtOutput]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="638,139" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" WorkbookPath="C:\Users\Kushagra\Documents\UiPath\connectToMS\Book1.xlsx" />
+      </Sequence>
+    </Sequence>
+    <Sequence DisplayName="FormFillers" sap:VirtualizedContainerService.HintSize="622,10448" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="sd:DataTable" Name="UserDT" />
+        <Variable x:TypeArguments="sd:DataTable" Name="dtProccessing" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:BuildDataTable DataTable="[dtProccessing]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="588,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Date_Time&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Machine_name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Process_name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Process_start_time&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Candidate_name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Details.JSON&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+      <ui:ReadRange AddHeaders="True" DataTable="[UserDT]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="588,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="Book1.xlsx">
+        <ui:ReadRange.Range>
+          <InArgument x:TypeArguments="x:String">
+            <Literal x:TypeArguments="x:String" Value="" />
+          </InArgument>
+        </ui:ReadRange.Range>
+      </ui:ReadRange>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: STGI Technologies Consulting Pvt. Ltd. Form for Potential Candidates" sap:VirtualizedContainerService.HintSize="588,10176" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="02c8ee44-756b-4107-8077-d8e58ed9efd9" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="554,9935" sap2010:WorkflowViewState.IdRef="Sequence_6">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="startDate" />
+                <Variable x:TypeArguments="x:String" Name="realStartDate" />
+                <Variable x:TypeArguments="x:String" Name="formattedDate" />
+                <Variable x:TypeArguments="x:String" Name="strinput" />
+                <Variable x:TypeArguments="x:String" Name="stroutput" />
+                <Variable x:TypeArguments="x:String" Name="strcalendar" />
+                <Variable x:TypeArguments="x:String" Name="strdateonly" />
+                <Variable x:TypeArguments="x:String" Name="strinputvalue" />
+                <Variable x:TypeArguments="x:String" Name="strcalenda" />
+                <Variable x:TypeArguments="x:String" Name="Date_Time" />
+                <Variable x:TypeArguments="x:String" Name="Machine_name" />
+                <Variable x:TypeArguments="x:String" Name="Process_name" />
+                <Variable x:TypeArguments="x:String" Name="Process_start_time" />
+                <Variable x:TypeArguments="x:String" Name="Candidate_Name" />
+                <Variable x:TypeArguments="x:String" Name="Details_JSON" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Assign sap:VirtualizedContainerService.HintSize="520,115" sap2010:WorkflowViewState.IdRef="Assign_8">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[Date_Time]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">[Now.ToString("MM-dd-yyyy HH:mm::ss")]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <Assign sap:VirtualizedContainerService.HintSize="520,115" sap2010:WorkflowViewState.IdRef="Assign_9">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[Machine_name]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">[Environment.MachineName]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Start now'" sap:VirtualizedContainerService.HintSize="520,227" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="02c8ee44-756b-4107-8077-d8e58ed9efd9" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://forms.office.com/pages/responsepage.aspx?id=Gv_-GtOKLEaCBt1iv8DZPhnYsvcioMFPnc1mAzJhzCZURUZBWDdPTUxXOFlSMjJCMTFER0MyRkcwNi4u&amp;route=shorturl" CVScreenId="e92eda03-8c16-4a6a-adc9-b186596a3a0e" CvElementArea="2227, 1359, 214, 121" CvTextArea="2259, 1405, 146, 30" CvTextArgument="Start now" CvType="Button" DesignTimeRectangle="2230, 1363, 208, 112" DesignTimeScaleFactor="2" ElementType="Button" FullSelectorArgument="&lt;webctrl class='css-166' parentid='form-main-content1' tag='BUTTON' /&gt;" Guid="1f6cd136-7b13-4be1-bae4-cc7013444243" InformativeScreenshot="348baf1f93f7c64340e04e010a79fc5a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='STGI Technologies Consulting Pvt. Ltd. Form for Potential Candidates' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="e92eda03-8c16-4a6a-adc9-b186596a3a0e" CvElementArea="2227, 1359, 214, 121" CvTextArea="2259, 1405, 146, 30" CvTextArgument="Start now" CvType="Button" DesignTimeRectangle="2264, 1365, 140, 108" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='css-105' parentid='form-main-content1' tag='DIV' type='' aaname='Start now' check:innerText='Start now' /&gt;" Guid="2ad7b4b9-f44d-4078-99db-dd0c85ea8f05" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="Element 'STGI Technologies Consu…'" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Target>
+                      <uix:TargetAnchorable BrowserURL="https://forms.office.com/pages/responsepage.aspx?id=Gv_-GtOKLEaCBt1iv8DZPhnYsvcioMFPnc1mAzJhzCZURUZBWDdPTUxXOFlSMjJCMTFER0MyRkcwNi4u&amp;route=shorturl" DesignTimeRectangle="660, 322, 969, 154" DesignTimeScaleFactor="2" FuzzySelectorArgument="&lt;webctrl parentid='FormTitleId_titleAriaId' tag='SPAN' type='' class='text-format-content ' aaname='STGI Technologies Consulting Pvt. Ltd.Form for Potential Candidates' check:innerText='STGI Technologies Consulting Pvt. Ltd.&amp;#xA;Form for Potential Candidates' /&gt;" Guid="9e378173-49bb-4fff-85b2-e8ff03715847" InformativeScreenshot="cf013b3f32cb5ece722eef918a293a3d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='STGI Technologies Consulting Pvt. Ltd. Form for Potential Candidates' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                    </uix:VerifyExecutionOptions.Target>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <Assign sap:VirtualizedContainerService.HintSize="520,115" sap2010:WorkflowViewState.IdRef="Assign_10">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[Process_name]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">Candidate Data Submission</InArgument>
+                </Assign.Value>
+              </Assign>
+              <Assign sap:VirtualizedContainerService.HintSize="520,115" sap2010:WorkflowViewState.IdRef="Assign_11">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[Process_start_time]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">[Now.ToString("MM-dd-yyyy HH:mm:ss")]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Applicant's Legal Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="520,288" sap2010:WorkflowViewState.IdRef="NTypeInto_13" ScopeIdentifier="02c8ee44-756b-4107-8077-d8e58ed9efd9" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://forms.office.com/pages/responsepage.aspx?id=Gv_-GtOKLEaCBt1iv8DZPhnYsvcioMFPnc1mAzJhzCZURUZBWDdPTUxXOFlSMjJCMTFER0MyRkcwNi4u&amp;route=shorturl" CVScreenId="0308d563-4fdb-43ed-9166-0d771a562612" CvElementArea="700, 1200, 1528, 73" CvType="InputBox" DesignTimeRectangle="700, 1204, 1524, 68" DesignTimeScaleFactor="2" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl aria-label='Single line text' aria-labelledby='QuestionId_r8664966f9f2b47bbb9192e8db88203c8 QuestionInfo_r8664966f9f2b47bbb9192e8db88203c8' tag='INPUT' type='' class='-ar-225' placeholder='Enter your answer' aaname='' /&gt;" Guid="777158e6-0665-49b2-898e-6947f8a7ed2f" InformativeScreenshot="dc76ee8eee1463904725478f20c0adf5.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='STGI Technologies Consulting Pvt. Ltd. Form for Potential Candidates' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="0308d563-4fdb-43ed-9166-0d771a562612" CvTextArea="695, 1127, 356, 38" CvTextArgument="Applicant's Legal Name" CvType="Text" DesignTimeRectangle="698, 1119, 353, 46" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Applicant&amp;apos;s Legal Name' tag='SPAN' type='' class='text-format-content ' check:innerText='Applicant&amp;apos;s Legal Name' /&gt;" Guid="9a8151b3-1a44-4c56-815c-a67e0d043284" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.Text>
+                  <InArgument x:TypeArguments="x:String">
+                    <VisualBasicValue x:TypeArguments="x:String" ExpressionText="UserDT.Rows(0)(&quot;Applicant's Legal Name&quot;).ToString" sap2010:WorkflowViewState.IdRef="VisualBasicValue`1_1" />
+                  </InArgument>
+                </uix:NTypeInto.Text>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="Label 'Applicant's Legal Name'" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Target>
+                      <uix:TargetAnchorable BrowserURL="https://forms.office.com/pages/responsepage.aspx?id=Gv_-GtOKLEaCBt1iv8DZPhnYsvcioMFPnc1mAzJhzCZURUZBWDdPTUxXOFlSMjJCMTFER0MyRkcwNi4u&amp;route=shorturl" CVScreenId="be5b7839-b5f3-4462-aab4-b81b55c7f307" CvTextArea="695, 1127, 356, 38" CvTextArgument="Applicant's Legal Name" CvType="Text" DesignTimeRectangle="698, 1119, 353, 46" DesignTimeScaleFactor="2" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Applicant&amp;apos;s Legal Name' tag='SPAN' type='' class='text-format-content ' check:innerText='Applicant&amp;apos;s Legal Name' /&gt;" Guid="8bb153d8-fbee-4b31-a062-1bf46d143734" InformativeScreenshot="e4d08b75f6a4568f629d530d77b55601.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='STGI Technologies Consulting Pvt. Ltd. Form for Potential Candidates' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                    </uix:VerifyExecutionTypeIntoOptions.Target>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <Assign sap:VirtualizedContainerService.HintSize="520,115" sap2010:WorkflowViewState.IdRef="Assign_12">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[Candidate_Name]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">[UserDT.Rows(0)("Applicant's Legal Name").ToString]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="520,277" sap2010:WorkflowViewState.IdRef="CommentOut_17">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="468,166" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="variable1" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="Assign_3">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[startDate]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[UserDT.Rows(0)("Start Date").ToString]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                  </Sequence>
+                </ui:CommentOut.Body>
+              </ui:CommentOut>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="520,277" sap2010:WorkflowViewState.IdRef="CommentOut_18">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="468,166" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="Assign_4">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[realStartDate]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[DateTime.FromOADate(Convert.ToDouble(startDate))]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                  </Sequence>
+                </ui:CommentOut.Body>
+              </ui:CommentOut>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="520,277" sap2010:WorkflowViewState.IdRef="CommentOut_19">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="468,166" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="Assign_2">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[formattedDate]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[realStartDate.ToString("dd/MM/yyyy")]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                  </Sequence>
+                </ui:CommentOut.Body>
+              </ui:CommentOut>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="520,277" sap2010:WorkflowViewState.IdRef="CommentOut_23">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="468,166" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="Assign_7">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[strinputvalue]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[UserDT.Rows(0)("Start Date").ToString]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                  </Sequence>
+                </ui:CommentOut.Body>
+              </ui:CommentOut>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="520,437" sap2010:WorkflowViewState.IdRef="CommentOut_24">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,326" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" Title="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="382,266" sap2010:WorkflowViewState.IdRef="InputDialog_4" IsPassword="False" Label="[UserDT.Rows(0)(&quot;Start Date&quot;).ToString]">
+                      <ui:InputDialog.Result>
+                        <OutArgument x:TypeArguments="x:String">[strinput]</OutArgument>
+                      </ui:InputDialog.Result>
+                    </ui:InputDialog>
+                  </Sequence>
+                </ui:CommentOut.Body>
+              </ui:CommentOut>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="520,339" sap2010:WorkflowViewState.IdRef="CommentOut_25">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,228" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,168" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[strinput]" />
+                  </Sequence>
+                </ui:CommentOut.Body>
+              </ui:CommentOut>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="520,277" sap2010:WorkflowViewState.IdRef="CommentOut_26">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="468,166" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="Assign_5">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[stroutput]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[datetime.ParseExact(strinput,"d/MM/yyyy",system.Globalization.CultureInfo.InvariantCulture).ToString("MMMM yyyy")]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                  </Sequence>
+                </ui:CommentOut.Body>
+              </ui:CommentOut>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="520,277" sap2010:WorkflowViewState.IdRef="CommentOut_27">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="468,166" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="Assign_6">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[strdateonly]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[DateTime.ParseExact(strinput,"d/MM/yyyy",system.Globalization.CultureInfo.InvariantCulture).ToString("d/MM").Split("/"c)(0)]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                  </Sequence>
+                </ui:CommentOut.Body>
+              </ui:CommentOut>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="520,389" sap2010:WorkflowViewState.IdRef="CommentOut_28">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,278" sap2010:WorkflowViewState.IdRef="Sequence_35">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Start Date'" sap:VirtualizedContainerService.HintSize="382,218" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="02c8ee44-756b-4107-8077-d8e58ed9efd9" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://forms.office.com/pages/responsepage.aspx?id=Gv_-GtOKLEaCBt1iv8DZPhnYsvcioMFPnc1mAzJhzCZURUZBWDdPTUxXOFlSMjJCMTFER0MyRkcwNi4u&amp;route=shorturl" CVScreenId="fc1578fa-d7d5-491b-80ae-200e2ddd7185" CvTextArea="723, 1175, 454, 36" CvTextArgument="Please input date (dd/MM/yyyy)" CvType="Text" DesignTimeRectangle="700, 1157, 1524, 68" DesignTimeScaleFactor="2" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='ms-TextField-field field-291' placeholder='Please input date (dd/MM/yyyy)' aaname='' /&gt;" Guid="fb57ece9-8325-4b73-9323-83e0d7cb1045" InformativeScreenshot="a0439dec97dd622553b187e8615be8c5.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='STGI Technologies Consulting Pvt. Ltd. Form for Potential Candidates' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="fc1578fa-d7d5-491b-80ae-200e2ddd7185" CvTextArea="697, 1081, 150, 30" CvTextArgument="Start Date" CvType="Text" DesignTimeRectangle="698, 1072, 149, 46" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Start Date' tag='SPAN' type='' class='text-format-content ' check:innerText='Start Date' /&gt;" Guid="551ba339-1614-4e97-9241-e3a10d71da9a" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                  </Sequence>
+                </ui:CommentOut.Body>
+              </ui:CommentOut>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="520,352" sap2010:WorkflowViewState.IdRef="CommentOut_29">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,241" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NGetText DisplayName="Get Text ''" sap:VirtualizedContainerService.HintSize="382,181" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="02c8ee44-756b-4107-8077-d8e58ed9efd9" TextString="[strcalendar]" Version="V4">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://forms.office.com/pages/responsepage.aspx?id=Gv_-GtOKLEaCBt1iv8DZPhnYsvcioMFPnc1mAzJhzCZURUZBWDdPTUxXOFlSMjJCMTFER0MyRkcwNi4u&amp;route=shorturl" CVScreenId="344dfad3-9e41-4c5c-bf6a-bb67ef62fcc4" CvTextArea="743, 753, 186, 32" CvType="AnyWordGroup" DesignTimeRectangle="744, 748, 210, 37" DesignTimeScaleFactor="2" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='id__12' tag='SPAN' type='' class='' /&gt;" Guid="150099b1-3d47-49c4-9ad2-f8dac62068a0" InformativeScreenshot="ae624a3003b321f5a0c750ffc86ceb31.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='STGI Technologies Consulting Pvt. Ltd. Form for Potential Candidates' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="344dfad3-9e41-4c5c-bf6a-bb67ef62fcc4" CvElementArea="1068, 746, 37, 36" CvType="CloseButton" DesignTimeRectangle="1076, 739, 24, 56" FuzzySelectorArgument="&lt;webctrl aaname='' parentid='DatePicker-Callout1' tag='I' type='' class='root-323' check:innerText='' /&gt;" Guid="79bd584e-0c58-4bcb-b67f-8df1c28c1ee3" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                  </Sequence>
+                </ui:CommentOut.Body>
+              </ui:CommentOut>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="520,954" sap2010:WorkflowViewState.IdRef="CommentOut_30">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="484,843" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[stroutput.Trim&lt;&gt;strcalendar]" DisplayName="While" sap:VirtualizedContainerService.HintSize="450,783" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+                      <ui:InterruptibleWhile.Body>
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,645" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                          <Sequence.Variables>
+                            <Variable x:TypeArguments="x:String" Name="strcalendar" />
+                          </Sequence.Variables>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''" sap:VirtualizedContainerService.HintSize="382,227" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="02c8ee44-756b-4107-8077-d8e58ed9efd9" Version="V4">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://forms.office.com/pages/responsepage.aspx?id=Gv_-GtOKLEaCBt1iv8DZPhnYsvcioMFPnc1mAzJhzCZURUZBWDdPTUxXOFlSMjJCMTFER0MyRkcwNi4u&amp;route=shorturl" CVScreenId="bbe83a09-8b89-4869-8d55-ffaa91875bad" CvElementArea="955, 751, 37, 38" CvType="Icon" DesignTimeRectangle="964, 744, 24, 56" DesignTimeScaleFactor="2" FuzzySelectorArgument="&lt;webctrl parentid='DatePicker-Callout1' tag='I' type='' class='root-324' aaname='' check:innerText='' /&gt;" Guid="39654151-9c71-4991-b47e-fcee3a47917b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABwAAAA8CAYAAAB1odqiAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHYcAAB2HAY/l8WUAAAEGSURBVFhH7dS9DsFQGMZxl4QgGLBiYq8oM/dVJNwAF8EtdO/QtckrT9M2aM9XvTHI+09OcnKW33LyNOjHCciegOwJyJ6A7AnInoClwjCk7WZDhyCgJEmyV/ucQGC+v6Z2q0m9bqcWag3m2Hw2pcl4RMvFgoaDvjNqBeYYzuNxp5Xn0el0TDFX1Ai+YrhHUZSCl8s5RVxRLfiJoVcQuaJKsApDnyByQStBFYaqQGSLlkAdhlQgskHfQBOGdCAyoQVogyETiHRoAd5u13SydBiyAVGO7vc7iuM4e1V8Gl22oCoBSwloSsBSAppyBrGL2Edsb52cwW8TkD0B2ROQPQHZE5C9fweJnveXhX0C6E0lAAAAAElFTkSuQmCC" InformativeScreenshot="948855657d940021caf032e7c2be3eef.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='STGI Technologies Consulting Pvt. Ltd. Form for Potential Candidates' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="bbe83a09-8b89-4869-8d55-ffaa91875bad" CvElementArea="1068, 752, 36, 35" CvType="CloseButton" DesignTimeRectangle="1076, 744, 24, 56" FullSelectorArgument="&lt;webctrl aaname='' parentid='DatePicker-Callout1' tag='I' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='' parentid='DatePicker-Callout1' tag='I' type='' class='root-324' check:innerText='' /&gt;" Guid="4810d1f6-8085-4ed0-947a-8590a29d3eb4" SearchSteps="Selector, FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NClick.Target>
+                            <uix:NClick.VerifyOptions>
+                              <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                <uix:VerifyExecutionOptions.Retry>
+                                  <InArgument x:TypeArguments="x:Boolean" />
+                                </uix:VerifyExecutionOptions.Retry>
+                                <uix:VerifyExecutionOptions.Timeout>
+                                  <InArgument x:TypeArguments="x:Double" />
+                                </uix:VerifyExecutionOptions.Timeout>
+                              </uix:VerifyExecutionOptions>
+                            </uix:NClick.VerifyOptions>
+                          </uix:NClick>
+                          <uix:NGetText DisplayName="Get Text ''" sap:VirtualizedContainerService.HintSize="382,190" sap2010:WorkflowViewState.IdRef="NGetText_7" ScopeIdentifier="02c8ee44-756b-4107-8077-d8e58ed9efd9" TextString="[strcalendar]" Version="V4">
+                            <uix:NGetText.Target>
+                              <uix:TargetAnchorable BrowserURL="https://forms.office.com/pages/responsepage.aspx?id=Gv_-GtOKLEaCBt1iv8DZPhnYsvcioMFPnc1mAzJhzCZURUZBWDdPTUxXOFlSMjJCMTFER0MyRkcwNi4u&amp;route=shorturl" CVScreenId="344dfad3-9e41-4c5c-bf6a-bb67ef62fcc4" CvTextArea="743, 753, 186, 32" CvType="AnyWordGroup" DesignTimeRectangle="744, 748, 210, 37" DesignTimeScaleFactor="2" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='id__12' tag='SPAN' type='' class='' /&gt;" Guid="150099b1-3d47-49c4-9ad2-f8dac62068a0" InformativeScreenshot="ae624a3003b321f5a0c750ffc86ceb31.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='STGI Technologies Consulting Pvt. Ltd. Form for Potential Candidates' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="344dfad3-9e41-4c5c-bf6a-bb67ef62fcc4" CvElementArea="1068, 746, 37, 36" CvType="CloseButton" DesignTimeRectangle="1076, 739, 24, 56" FuzzySelectorArgument="&lt;webctrl aaname='' parentid='DatePicker-Callout1' tag='I' type='' class='root-323' check:innerText='' /&gt;" Guid="79bd584e-0c58-4bcb-b67f-8df1c28c1ee3" SearchSteps="FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NGetText.Target>
+                          </uix:NGetText>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,168" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[strcalendar]" />
+                        </Sequence>
+                      </ui:InterruptibleWhile.Body>
+                    </ui:InterruptibleWhile>
+                  </Sequence>
+                </ui:CommentOut.Body>
+              </ui:CommentOut>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="520,301" sap2010:WorkflowViewState.IdRef="CommentOut_31">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,190" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="382,130" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+                      <ui:Click.CursorPosition>
+                        <ui:CursorPosition Position="Center">
+                          <ui:CursorPosition.OffsetX>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetX>
+                          <ui:CursorPosition.OffsetY>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetY>
+                        </ui:CursorPosition>
+                      </ui:Click.CursorPosition>
+                      <ui:Click.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3216ce3d-70b3-4cc9-9bc4-76dddedb2464" InformativeScreenshot="e9cf75110f0ade9078732fe53e54f69d" Selector="[string.Format(&quot;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='{0}' tableRow='4' tag='SPAN' /&gt;&quot;, strdateonly)]">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:Click.Target>
+                    </ui:Click>
+                  </Sequence>
+                </ui:CommentOut.Body>
+              </ui:CommentOut>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="520,450" sap2010:WorkflowViewState.IdRef="CommentOut_20">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,339" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Start Date'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,279" sap2010:WorkflowViewState.IdRef="NTypeInto_23" ScopeIdentifier="02c8ee44-756b-4107-8077-d8e58ed9efd9" Text="[formattedDate]" Version="V4">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://forms.office.com/pages/responsepage.aspx?id=Gv_-GtOKLEaCBt1iv8DZPhnYsvcioMFPnc1mAzJhzCZURUZBWDdPTUxXOFlSMjJCMTFER0MyRkcwNi4u&amp;route=shorturl" CVScreenId="63a9d1d1-8c56-465e-ba27-3d50ba8e7be9" CvTextArea="723, 1223, 454, 36" CvTextArgument="Please input date (dd/MM/yyyy)" CvType="Text" DesignTimeRectangle="700, 1206, 1524, 68" DesignTimeScaleFactor="2" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='ms-TextField-field field-291' placeholder='Please input date (dd/MM/yyyy)' aaname='' /&gt;" Guid="1e98bf92-a3af-4e04-ae84-7e2000a01006" InformativeScreenshot="6763003b9ef7733df61cef1f47f66f2b.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='STGI Technologies Consulting Pvt. Ltd. Form for Potential Candidates' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="63a9d1d1-8c56-465e-ba27-3d50ba8e7be9" CvTextArea="697, 1129, 152, 30" CvTextArgument="Start Date" CvType="Text" DesignTimeRectangle="698, 1121, 149, 46" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Start Date' tag='SPAN' type='' class='text-format-content ' check:innerText='Start Date' /&gt;" Guid="b485e19a-74d4-472c-884c-6effb77e403a" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions DisplayName="Label 'Start Date'" Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Target>
+                            <uix:TargetAnchorable BrowserURL="https://forms.office.com/pages/responsepage.aspx?id=Gv_-GtOKLEaCBt1iv8DZPhnYsvcioMFPnc1mAzJhzCZURUZBWDdPTUxXOFlSMjJCMTFER0MyRkcwNi4u&amp;route=shorturl" CVScreenId="23c54d1f-9211-4118-abfe-85ba356f0e27" CvTextArea="697, 1129, 152, 30" CvTextArgument="Start Date" CvType="Text" DesignTimeRectangle="698, 1121, 149, 46" DesignTimeScaleFactor="2" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Start Date' tag='SPAN' type='' class='text-format-content ' check:innerText='Start Date' /&gt;" Guid="713b3d9f-55dd-4d0d-9f71-65589afbba25" InformativeScreenshot="9d46fda0fcfa4ab7687fe9d2238def5d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='STGI Technologies Consulting Pvt. Ltd. Form for Potential Candidates' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                          </uix:VerifyExecutionTypeIntoOptions.Target>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                    </uix:NTypeInto>
+                  </Sequence>
+                </ui:CommentOut.Body>
+              </ui:CommentOut>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="520,453" sap2010:WorkflowViewState.IdRef="CommentOut_33">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,342" sap2010:WorkflowViewState.IdRef="Sequence_40">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NInjectJsScript InputParameter="{x:Null}" ScriptOutput="{x:Null}" DisplayName="Inject Js Script" sap:VirtualizedContainerService.HintSize="382,282" sap2010:WorkflowViewState.IdRef="NInjectJsScript_1" ScriptCode="Function (element, input) {&#xA;    document.querySelector('#DatePicker0-label').value = '24/10/2004';&#xA;}" Version="V4" />
+                  </Sequence>
+                </ui:CommentOut.Body>
+              </ui:CommentOut>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into 'Start Date'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="520,57" sap2010:WorkflowViewState.IdRef="NTypeInto_25" ScopeIdentifier="02c8ee44-756b-4107-8077-d8e58ed9efd9" Text="01/08/2024" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://forms.office.com/pages/responsepage.aspx?id=Gv_-GtOKLEaCBt1iv8DZPhnYsvcioMFPnc1mAzJhzCZURUZBWDdPTUxXOFlSMjJCMTFER0MyRkcwNi4u&amp;route=shorturl" CVScreenId="0b13f067-368d-42b5-8dcc-bbd142b108ec" CvTextArea="723, 1153, 454, 38" CvTextArgument="Please input date (dd/MM/yyyy)" CvType="Text" DesignTimeRectangle="700, 1137, 1524, 68" DesignTimeScaleFactor="2" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='ms-TextField-field field-291' placeholder='Please input date (dd/MM/yyyy)' aaname='' /&gt;" Guid="b430618c-fb6b-4442-ac8b-98fe0fff57f3" InformativeScreenshot="0238ba9f827859bf79c5653634b749e0.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='STGI Technologies Consulting Pvt. Ltd. Form for Potential Candidates' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="0b13f067-368d-42b5-8dcc-bbd142b108ec" CvTextArea="697, 1061, 150, 30" CvTextArgument="Start Date" CvType="Text" DesignTimeRectangle="698, 1052, 149, 46" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Start Date' tag='SPAN' type='' class='text-format-content ' check:innerText='Start Date' /&gt;" Guid="3c4f25a9-ad64-4507-b7bd-b7602e579b80" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Location'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="520,288" sap2010:WorkflowViewState.IdRef="NTypeInto_14" ScopeIdentifier="02c8ee44-756b-4107-8077-d8e58ed9efd9" Text="[UserDT.Rows(0)(&quot;Location&quot;).ToString]" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://forms.office.com/pages/responsepage.aspx?id=Gv_-GtOKLEaCBt1iv8DZPhnYsvcioMFPnc1mAzJhzCZURUZBWDdPTUxXOFlSMjJCMTFER0MyRkcwNi4u&amp;route=shorturl" CVScreenId="6b68fbc7-c4dd-43a8-b606-8a97d5e4544c" CvElementArea="701, 1411, 1526, 73" CvType="InputBox" DesignTimeRectangle="700, 1415, 1524, 68" DesignTimeScaleFactor="2" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl aria-label='Single line text' aria-labelledby='QuestionId_r6eeec138f2d9468e9b3f8deee2d9c5ad QuestionInfo_r6eeec138f2d9468e9b3f8deee2d9c5ad' tag='INPUT' type='' class='-ar-234' placeholder='Enter your answer' aaname='' /&gt;" Guid="4412861f-f898-469e-a037-a3f364f5f15d" InformativeScreenshot="0953725f549a84aa3a4d17e3ca2792ba.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='STGI Technologies Consulting Pvt. Ltd. Form for Potential Candidates' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="6b68fbc7-c4dd-43a8-b606-8a97d5e4544c" CvTextArea="697, 1339, 128, 28" CvTextArgument="Location" CvType="Text" DesignTimeRectangle="698, 1329, 128, 46" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Location' tag='SPAN' type='' class='text-format-content ' check:innerText='Location' /&gt;" Guid="1f8a24e9-04d2-422f-a35e-21d7831ef4e2" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="Label 'Location'" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Target>
+                      <uix:TargetAnchorable BrowserURL="https://forms.office.com/pages/responsepage.aspx?id=Gv_-GtOKLEaCBt1iv8DZPhnYsvcioMFPnc1mAzJhzCZURUZBWDdPTUxXOFlSMjJCMTFER0MyRkcwNi4u&amp;route=shorturl" CVScreenId="6b68fbc7-c4dd-43a8-b606-8a97d5e4544c" CvTextArea="697, 1339, 128, 28" CvTextArgument="Location" CvType="Text" DesignTimeRectangle="698, 1329, 128, 46" DesignTimeScaleFactor="2" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Location' tag='SPAN' type='' class='text-format-content ' check:innerText='Location' /&gt;" Guid="27c4cf46-4e81-4357-9cf8-7e6031d56d0a" InformativeScreenshot="6265d38c9926cc94f7d1d61eccea75e3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='STGI Technologies Consulting Pvt. Ltd. Form for Potential Candidates' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                    </uix:VerifyExecutionTypeIntoOptions.Target>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Reporting Manager'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="520,288" sap2010:WorkflowViewState.IdRef="NTypeInto_15" ScopeIdentifier="02c8ee44-756b-4107-8077-d8e58ed9efd9" Text="[UserDT.Rows(0)(&quot;Reporting Manager&quot;).ToString]" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://forms.office.com/pages/responsepage.aspx?id=Gv_-GtOKLEaCBt1iv8DZPhnYsvcioMFPnc1mAzJhzCZURUZBWDdPTUxXOFlSMjJCMTFER0MyRkcwNi4u&amp;route=shorturl" CVScreenId="302b727a-71eb-4c5b-8441-060d54640bc3" CvElementArea="704, 815, 1523, 74" CvType="InputBox" DesignTimeRectangle="700, 820, 1524, 68" DesignTimeScaleFactor="2" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='' class='-ar-225' placeholder='Enter your answer' aaname='' /&gt;" Guid="1b7bddc3-8517-494b-8712-1dedb60cf773" InformativeScreenshot="71188b92a3d17fe29fabe003fa4a46a4.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='STGI Technologies Consulting Pvt. Ltd. Form for Potential Candidates' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="302b727a-71eb-4c5b-8441-060d54640bc3" CvTextArea="699, 743, 292, 38" CvTextArgument="Reporting Manager" CvType="Text" DesignTimeRectangle="698, 735, 292, 46" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Reporting Manager' tag='SPAN' type='' class='text-format-content ' check:innerText='Reporting Manager' /&gt;" Guid="ebd1787b-5a88-475d-9982-cef5483dd10c" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="Label 'Reporting Manager'" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Target>
+                      <uix:TargetAnchorable BrowserURL="https://forms.office.com/pages/responsepage.aspx?id=Gv_-GtOKLEaCBt1iv8DZPhnYsvcioMFPnc1mAzJhzCZURUZBWDdPTUxXOFlSMjJCMTFER0MyRkcwNi4u&amp;route=shorturl" CVScreenId="1e39ce03-c647-4bf9-8888-977544bc09c1" CvTextArea="699, 743, 292, 38" CvTextArgument="Reporting Manager" CvType="Text" DesignTimeRectangle="698, 735, 292, 46" DesignTimeScaleFactor="2" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Reporting Manager' tag='SPAN' type='' class='text-format-content ' check:innerText='Reporting Manager' /&gt;" Guid="ae61c3ee-fdb2-44a0-a8a0-0aaf36aac9e2" InformativeScreenshot="4697ce55633e92aa71bc6aed2475f7bd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='STGI Technologies Consulting Pvt. Ltd. Form for Potential Candidates' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                    </uix:VerifyExecutionTypeIntoOptions.Target>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Email Address'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="520,288" sap2010:WorkflowViewState.IdRef="NTypeInto_16" ScopeIdentifier="02c8ee44-756b-4107-8077-d8e58ed9efd9" Text="[UserDT.Rows(0)(&quot;Email Address&quot;).ToString]" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://forms.office.com/pages/responsepage.aspx?id=Gv_-GtOKLEaCBt1iv8DZPhnYsvcioMFPnc1mAzJhzCZURUZBWDdPTUxXOFlSMjJCMTFER0MyRkcwNi4u&amp;route=shorturl" CVScreenId="1e39ce03-c647-4bf9-8888-977544bc09c1" CvElementArea="696, 1400, 1532, 75" CvType="InputBox" DesignTimeRectangle="700, 1405, 1524, 68" DesignTimeScaleFactor="2" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl aria-labelledby='QuestionId_r2ad845410e10413eb5a2131c6b064aa7 QuestionInfo_r2ad845410e10413eb5a2131c6b064aa7' tag='INPUT' type='' class='-ar-225' placeholder='Enter your answer' aaname='' /&gt;" Guid="394f35a2-9600-4b9d-baad-1a3bb7106535" InformativeScreenshot="0d079f8d988c930e33027a1df0de4b54.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='STGI Technologies Consulting Pvt. Ltd. Form for Potential Candidates' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="1e39ce03-c647-4bf9-8888-977544bc09c1" CvTextArea="697, 1327, 212, 32" CvTextArgument="Email Address" CvType="Text" DesignTimeRectangle="698, 1319, 210, 46" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Email Address' tag='SPAN' type='' class='text-format-content ' check:innerText='Email Address' /&gt;" Guid="36b757f4-fbdd-47a1-b7a3-7ff15f825ddc" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="Label 'Email Address'" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Target>
+                      <uix:TargetAnchorable BrowserURL="https://forms.office.com/pages/responsepage.aspx?id=Gv_-GtOKLEaCBt1iv8DZPhnYsvcioMFPnc1mAzJhzCZURUZBWDdPTUxXOFlSMjJCMTFER0MyRkcwNi4u&amp;route=shorturl" CVScreenId="1e39ce03-c647-4bf9-8888-977544bc09c1" CvTextArea="697, 1327, 212, 32" CvTextArgument="Email Address" CvType="Text" DesignTimeRectangle="698, 1319, 210, 46" DesignTimeScaleFactor="2" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Email Address' tag='SPAN' type='' class='text-format-content ' check:innerText='Email Address' /&gt;" Guid="17779d9c-0e40-4dd7-b105-391e98c9dd10" InformativeScreenshot="fcaabea5b3a5e6295bb52967c0794a70.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='STGI Technologies Consulting Pvt. Ltd. Form for Potential Candidates' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                    </uix:VerifyExecutionTypeIntoOptions.Target>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Job Title'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="520,288" sap2010:WorkflowViewState.IdRef="NTypeInto_17" ScopeIdentifier="02c8ee44-756b-4107-8077-d8e58ed9efd9" Text="[UserDT.Rows(0)(&quot;Job Title&quot;).ToString]" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://forms.office.com/pages/responsepage.aspx?id=Gv_-GtOKLEaCBt1iv8DZPhnYsvcioMFPnc1mAzJhzCZURUZBWDdPTUxXOFlSMjJCMTFER0MyRkcwNi4u&amp;route=shorturl" CVScreenId="5d988e07-9894-4d33-a600-9fd11716eb90" CvElementArea="706, 519, 1516, 69" CvType="InputBox" DesignTimeRectangle="700, 522, 1524, 68" DesignTimeScaleFactor="2" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl aria-labelledby='QuestionId_r292cb009eaff4b9f94b5c40926ed59f9 QuestionInfo_r292cb009eaff4b9f94b5c40926ed59f9' tag='INPUT' type='' class='-ar-225' placeholder='Enter your answer' aaname='' /&gt;" Guid="a2b8df55-c1f1-446f-89aa-731936fbd2fe" InformativeScreenshot="da6ffc9a0e20ab965ee74d1c7697e11f.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='STGI Technologies Consulting Pvt. Ltd. Form for Potential Candidates' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="5d988e07-9894-4d33-a600-9fd11716eb90" CvTextArea="695, 445, 128, 30" CvTextArgument="Job Title" CvType="Text" DesignTimeRectangle="698, 437, 125, 46" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Job Title' tag='SPAN' type='' class='text-format-content ' check:innerText='Job Title' /&gt;" Guid="32bcebac-1bda-4abb-a23a-dab60bffceaf" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="Label 'Job Title'" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Target>
+                      <uix:TargetAnchorable BrowserURL="https://forms.office.com/pages/responsepage.aspx?id=Gv_-GtOKLEaCBt1iv8DZPhnYsvcioMFPnc1mAzJhzCZURUZBWDdPTUxXOFlSMjJCMTFER0MyRkcwNi4u&amp;route=shorturl" CVScreenId="8d7f0c95-9a2b-4c09-975c-7f4e8ee158a0" CvTextArea="695, 445, 128, 30" CvTextArgument="Job Title" CvType="Text" DesignTimeRectangle="698, 437, 125, 46" DesignTimeScaleFactor="2" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Job Title' tag='SPAN' type='' class='text-format-content ' check:innerText='Job Title' /&gt;" Guid="bb51f658-5997-4fe4-ab9e-8c015052c44b" InformativeScreenshot="5840c15cbc143ac33098f926f237c470.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='STGI Technologies Consulting Pvt. Ltd. Form for Potential Candidates' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                    </uix:VerifyExecutionTypeIntoOptions.Target>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Department'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="520,288" sap2010:WorkflowViewState.IdRef="NTypeInto_18" ScopeIdentifier="02c8ee44-756b-4107-8077-d8e58ed9efd9" Text="[UserDT.Rows(0)(&quot;Department&quot;).ToString]" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://forms.office.com/pages/responsepage.aspx?id=Gv_-GtOKLEaCBt1iv8DZPhnYsvcioMFPnc1mAzJhzCZURUZBWDdPTUxXOFlSMjJCMTFER0MyRkcwNi4u&amp;route=shorturl" CVScreenId="093cc9ac-847d-48f2-8946-5e097986b74a" CvElementArea="698, 1101, 1531, 74" CvType="InputBox" DesignTimeRectangle="700, 1106, 1524, 68" DesignTimeScaleFactor="2" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl aria-labelledby='QuestionId_r07f0eabede814ed69d83e0c4974f70d1 QuestionInfo_r07f0eabede814ed69d83e0c4974f70d1' tag='INPUT' type='' class='-ar-225' placeholder='Enter your answer' aaname='' /&gt;" Guid="1e61c232-5c38-4a20-8102-18fd45ed648f" InformativeScreenshot="f1d24f74f8f582d5758b1258d3c74b0d.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='STGI Technologies Consulting Pvt. Ltd. Form for Potential Candidates' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="093cc9ac-847d-48f2-8946-5e097986b74a" CvTextArea="697, 1031, 182, 36" CvTextArgument="Department" CvType="Text" DesignTimeRectangle="698, 1021, 180, 46" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Department' tag='SPAN' type='' class='text-format-content ' check:innerText='Department' /&gt;" Guid="7dbbc4b0-94ae-4aab-b287-3c7eef1c5281" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="Label 'Department'" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Target>
+                      <uix:TargetAnchorable BrowserURL="https://forms.office.com/pages/responsepage.aspx?id=Gv_-GtOKLEaCBt1iv8DZPhnYsvcioMFPnc1mAzJhzCZURUZBWDdPTUxXOFlSMjJCMTFER0MyRkcwNi4u&amp;route=shorturl" CVScreenId="093cc9ac-847d-48f2-8946-5e097986b74a" CvTextArea="697, 1031, 182, 36" CvTextArgument="Department" CvType="Text" DesignTimeRectangle="698, 1021, 180, 46" DesignTimeScaleFactor="2" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Department' tag='SPAN' type='' class='text-format-content ' check:innerText='Department' /&gt;" Guid="2233a2df-efd4-414d-a646-3f170c1133c1" InformativeScreenshot="cb0957ea08c7317409dbdd7817886094.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='STGI Technologies Consulting Pvt. Ltd. Form for Potential Candidates' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                    </uix:VerifyExecutionTypeIntoOptions.Target>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Phone Number'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="520,288" sap2010:WorkflowViewState.IdRef="NTypeInto_20" ScopeIdentifier="02c8ee44-756b-4107-8077-d8e58ed9efd9" Text="[UserDT.Rows(0)(&quot;Phone Number&quot;).ToString]" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://forms.office.com/pages/responsepage.aspx?id=Gv_-GtOKLEaCBt1iv8DZPhnYsvcioMFPnc1mAzJhzCZURUZBWDdPTUxXOFlSMjJCMTFER0MyRkcwNi4u&amp;route=shorturl" CVScreenId="00c3ba08-7750-4686-b7de-07f114dc158a" CvElementArea="699, 1436, 1528, 75" CvType="InputBox" DesignTimeRectangle="700, 1441, 1524, 68" DesignTimeScaleFactor="2" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl aria-label='Single line text' aria-labelledby='QuestionId_r6b6104af068440599b7358f13aab1b2a QuestionInfo_r6b6104af068440599b7358f13aab1b2a' tag='INPUT' type='' class='-ar-225' placeholder='Enter your answer' aaname='' /&gt;" Guid="5cda0bf1-8f3e-46f6-9e46-f9c3119e8460" InformativeScreenshot="f19d0a30fba131859ccce74f460d4483.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='STGI Technologies Consulting Pvt. Ltd. Form for Potential Candidates' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="00c3ba08-7750-4686-b7de-07f114dc158a" CvTextArea="697, 1363, 232, 32" CvTextArgument="Phone Number" CvType="Text" DesignTimeRectangle="698, 1355, 229, 46" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Phone Number' tag='SPAN' type='' class='text-format-content ' check:innerText='Phone Number' /&gt;" Guid="071aabe5-4cc2-48c7-8715-a3fa1488f541" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="Label 'Phone Number'" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Target>
+                      <uix:TargetAnchorable BrowserURL="https://forms.office.com/pages/responsepage.aspx?id=Gv_-GtOKLEaCBt1iv8DZPhnYsvcioMFPnc1mAzJhzCZURUZBWDdPTUxXOFlSMjJCMTFER0MyRkcwNi4u&amp;route=shorturl" CVScreenId="00c3ba08-7750-4686-b7de-07f114dc158a" CvTextArea="697, 1363, 232, 32" CvTextArgument="Phone Number" CvType="Text" DesignTimeRectangle="698, 1355, 229, 46" DesignTimeScaleFactor="2" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Phone Number' tag='SPAN' type='' class='text-format-content ' check:innerText='Phone Number' /&gt;" Guid="2eccf2b9-3a85-4123-ad0c-28771788c597" InformativeScreenshot="604c33d8b1bc47183c3aae86e4745b8a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='STGI Technologies Consulting Pvt. Ltd. Form for Potential Candidates' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                    </uix:VerifyExecutionTypeIntoOptions.Target>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <Assign sap:VirtualizedContainerService.HintSize="520,116" sap2010:WorkflowViewState.IdRef="Assign_13">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[Details_JSON]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String" xml:space="preserve">["{" &amp; 
+"""Name"": """ &amp; UserDT.Rows(0)("Applicant's Legal Name").ToString &amp; """, " &amp; 
+"""Email Address"": """ &amp; UserDT.Rows(0)("Email Address").ToString &amp; """, " &amp; 
+"""Phone Number"": """ &amp; UserDT.Rows(0)("Phone Number").ToString &amp; """, " &amp; 
+"""Start Date"": """ &amp; UserDT.Rows(0)("Start Date").ToString &amp; """, " &amp; 
+"""Location"": """ &amp; UserDT.Rows(0)("Location").ToString &amp; """, " &amp; 
+"""Reports To"": """ &amp; UserDT.Rows(0)("Reporting Manager").ToString &amp; """, " &amp; 
+"""Department"": """ &amp; UserDT.Rows(0)("Department").ToString &amp; """, " &amp; 
+"""Job Title"": """ &amp; UserDT.Rows(0)("Job Title").ToString &amp; """}"]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="520,177" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[Date_Time + &quot;, &quot; + Machine_name + &quot;, &quot; + Process_name + &quot;, &quot; + Process_start_time + &quot;, &quot; + Candidate_Name + &quot;, &quot; + Details_JSON]">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:LogMessage>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="520,177" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[Details_JSON.ToString]" />
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="520,383" sap2010:WorkflowViewState.IdRef="CommentOut_34">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,272" sap2010:WorkflowViewState.IdRef="Sequence_42">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{Date_Time, Machine_name, Process_name, Process_start_time, Candidate_name, Details_JSON}]" DataTable="[dtProccessing]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="382,212" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+                  </Sequence>
+                </ui:CommentOut.Body>
+              </ui:CommentOut>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="520,588" sap2010:WorkflowViewState.IdRef="CommentOut_35">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="484,477" sap2010:WorkflowViewState.IdRef="Sequence_43">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtProccessing]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="450,417" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                      <ui:ForEachRow.Body>
+                        <ActivityAction x:TypeArguments="sd:DataRow">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,228" sap2010:WorkflowViewState.IdRef="Sequence_41">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,168" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[CurrentRow.ToString]" />
+                          </Sequence>
+                        </ActivityAction>
+                      </ui:ForEachRow.Body>
+                    </ui:ForEachRow>
+                  </Sequence>
+                </ui:CommentOut.Body>
+              </ui:CommentOut>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit'" sap:VirtualizedContainerService.HintSize="520,220" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="02c8ee44-756b-4107-8077-d8e58ed9efd9" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://forms.office.com/pages/responsepage.aspx?id=Gv_-GtOKLEaCBt1iv8DZPhnYsvcioMFPnc1mAzJhzCZURUZBWDdPTUxXOFlSMjJCMTFER0MyRkcwNi4u&amp;route=shorturl" CVScreenId="73c95a4c-4b37-4e9c-9103-2d743e15664b" CvElementArea="654, 1142, 184, 89" CvTextArea="699, 1173, 96, 28" CvTextArgument="Submit" CvType="Button" DesignTimeRectangle="660, 1147, 175, 80" DesignTimeScaleFactor="2" ElementType="Button" FuzzySelectorArgument="&lt;webctrl class='css-252' tag='BUTTON' type='' aaname='Submit' check:innerText='Submit' /&gt;" Guid="1c4bfc2f-289e-4a4a-bdc8-981710bc9504" InformativeScreenshot="b40da87688840a28000bec8ffeb5e1a9.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='STGI Technologies Consulting Pvt. Ltd. Form for Potential Candidates' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="Button 'Submit'" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Target>
+                      <uix:TargetAnchorable BrowserURL="https://forms.office.com/pages/responsepage.aspx?id=Gv_-GtOKLEaCBt1iv8DZPhnYsvcioMFPnc1mAzJhzCZURUZBWDdPTUxXOFlSMjJCMTFER0MyRkcwNi4u&amp;route=shorturl" CVScreenId="0207bc86-f49c-49a0-a2d5-182d9cf3c586" CvElementArea="654, 1142, 184, 89" CvTextArea="699, 1173, 96, 28" CvTextArgument="Submit" CvType="Button" DesignTimeRectangle="660, 1147, 175, 80" DesignTimeScaleFactor="2" ElementType="Button" FuzzySelectorArgument="&lt;webctrl class='css-252' tag='BUTTON' type='' aaname='Submit' check:innerText='Submit' /&gt;" Guid="815b148c-368b-42f8-bb54-e55f4612c4df" InformativeScreenshot="56a90ae37fc776d4fcd49904310e0361.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='STGI Technologies Consulting Pvt. Ltd. Form for Potential Candidates' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                    </uix:VerifyExecutionOptions.Target>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-13, -13, 2906, 1826" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHYcAAB2HAY/l8WUAAADjSURBVDhPY4AB82MXBID4PRD/JwG/h2qHG4BN0X/Tw2f/Ky5b+19q9kIwBrFBYiA5qHYIQNcIwyAN/C2d/5lzCsAYxAaJgeQYmJvb3wPxf3yYpRWhGYZBLjE+eApsAFZN6JjR0gbDAJgL4IoOPHj4Hxk4LVoKl2N3coFrRvcCigGNBw/D+chYMDgMeyAiKwIZADME3SDp5AywBnSMYcCDDx/gBiHLMZpZoIQBDBPtBYoN4PUNgIcBCGM1AB/GZwDBhMRc14TbAGQA8icuLFJSSdgAmCApGKoVAoAC79EV4McF7wGS5hcjN4jnVwAAAABJRU5ErkJggg==" InformativeScreenshot="0908cf1fe8de509ef4d25578d74ef4a4.jpg" Selector="&lt;html app='chrome.exe' title='STGI Technologies Consulting Pvt. Ltd. Form for Potential Candidates' /&gt;" Title="STGI Technologies Consulting Pvt. Ltd. Form for Potential Candidates" Url="https://forms.office.com/pages/responsepage.aspx?id=Gv_-GtOKLEaCBt1iv8DZPhnYsvcioMFPnc1mAzJhzCZURUZBWDdPTUxXOFlSMjJCMTFER0MyRkcwNi4u&amp;route=shorturl" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>
